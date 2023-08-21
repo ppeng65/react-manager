@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link href="/vite.svg" rel="icon" type="image/svg+xml" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Vite + React + TS</title>
+        <style>
+            #loading {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                color: #ed6c00;
+            }
+
+            .loading {
+                animation: rotate linear 1.5s infinite;
+            }
+
+            @keyframes rotate {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+        <script
+            type="text/javascript"
+            src="https://api.map.baidu.com/api?v=1.0&&type=webgl&ak=4NrxG3u7rwPAGsqa1HnjiZM9OpVv0GzZ"
+        ></script>
+        <script
+            type="text/javascript"
+            src="//api.map.baidu.com/library/TrackAnimation/src/TrackAnimation_min.js"
+        ></script>
+        <script src="./TextIconOverlayGL_min.js"></script>
+        <script src="./MarkerClustererGL_min.js"></script>
+    </head>
+
+    <body>
+        <div id="root"></div>
+        <div id="loading" style="display: none">
+            <svg
+                class="icon loading"
+                t="1691026274178"
+                class="icon"
+                viewBox="0 0 1024 1024"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                p-id="2309"
+                width="64"
+                height="64"
+            >
+                <path
+                    d="M988 548c-19.9 0-36-16.1-36-36 0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 0 0-94.3-139.9 437.71 437.71 0 0 0-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.3C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3 0.1 19.9-16 36-35.9 36z"
+                    fill="#ed6c00"
+                    p-id="2310"
+                ></path>
+            </svg>
+            <p>Loading...</p>
+        </div>
+        <script src="/src/main.tsx" type="module"></script>
+    </body>
+</html>

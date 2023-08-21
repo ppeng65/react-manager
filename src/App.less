@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.search-form {
+    padding: 20px;
+    border-radius: 5px;
+    color: var(--color);
+    background-color: var(--bg-color);
+}
+
+.base-table {
+    border-radius: 5px;
+    background-color: var(--bg-color);
+
+    .header-wrap {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px 5px 0 0;
+        color: var(--color);
+        .action button {
+            margin-left: 15px;
+        }
+    }
+}
+
+.search-form + .base-table {
+    margin-top: 20px;
+}

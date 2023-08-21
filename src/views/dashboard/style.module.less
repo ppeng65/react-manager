@@ -1,0 +1,70 @@
+.dashboard {
+    padding: 20px;
+    background-color: var(--bg-color);
+
+    .userInfo {
+        display: flex;
+        align-items: center;
+
+        .userImg {
+            margin-right: 25px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+    }
+
+    .report {
+        display: flex;
+        justify-content: space-between;
+
+        .card {
+            padding: 10px;
+            margin-right: 20px;
+            flex: 1;
+            height: 100px;
+            font-size: 14px;
+            border-radius: 5px;
+            color: #fff;
+
+            &:nth-child(1) {
+                background-color: #f4864f;
+            }
+
+            &:nth-child(2) {
+                background-color: #887edc;
+            }
+
+            &:nth-child(3) {
+                background-color: #4f95e5;
+            }
+
+            &:nth-child(4) {
+                margin-right: 0;
+                background-color: #6dc3d7;
+            }
+
+            .data {
+                text-align: center;
+                font-size: 24px;
+            }
+        }
+    }
+
+    .chart {
+        margin-top: 50px;
+
+        .itemChart {
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .pieWrap {
+            display: flex;
+
+            .itemChart {
+                flex: 1;
+            }
+        }
+    }
+}

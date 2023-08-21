@@ -1,0 +1,37 @@
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 140px - 40px);
+    background-color: var(--bg-color);
+
+    .content {
+        position: relative;
+        bottom: 40px;
+
+        .subTitle {
+            font-size: 30px;
+            line-height: 42px;
+            color: var(--color);
+        }
+
+        .title {
+            font-size: 40px;
+            line-height: 62px;
+            color: #ed6c00;
+        }
+
+        .desc {
+            font-size: 14px;
+            color: #a0a0a0;
+        }
+    }
+
+    .img {
+        margin-left: 105px;
+        width: 370px;
+        height: 320px;
+        background: url('/imgs/welcome-bg.png') no-repeat;
+        background-size: contain;
+    }
+}
