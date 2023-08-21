@@ -79,7 +79,7 @@ export default {
             const link = document.createElement('a')
             link.download = decodeURIComponent(fileName)
             // link.href = URL.createObjectURL(blob)
-            link.href = '../assets/订单列表.xlsx'
+            link.href = '/订单列表.xlsx'
             document.body.appendChild(link)
             link.click()
             document.body.removeChild(link)
