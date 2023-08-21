@@ -27,7 +27,7 @@ export default (props: IModalProps<Role.RoleItem>) => {
         open
     }))
 
-    const open = (type: IAction, data?: Role.RoleItem) => {
+    const open = (_type: IAction, data?: Role.RoleItem) => {
         setVisible(true)
         setRoleInfo(data)
         setCheckedKeys(data?.permissionList.checkedKeys || [])

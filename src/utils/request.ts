@@ -71,7 +71,7 @@ export default {
             data,
             method: 'post',
             responseType: 'blob'
-        }).then(response => {
+        }).then(_response => {
             // const blob = new Blob(response.data, {
             //     type: response.data.type
             // })
