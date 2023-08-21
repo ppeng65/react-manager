@@ -8,6 +8,7 @@ import { Menu as IMenu } from '@/types/api'
 import { useStore } from '@/store'
 
 import styled from './style.module.less'
+import logoImg from '@/assets/logo.png'
 
 type MenuItem = Required<MenuProps>['items'][number]
 
@@ -105,7 +106,7 @@ const Menus = () => {
     return (
         <div className={styled.navWrap}>
             <div className={styled.logoWrap} onClick={handleClickLogo}>
-                <img src='/imgs/logo.png' className={styled.logo} alt='' />
+                <img src={logoImg} className={styled.logo} alt='' />
                 {collapsed ? '' : <span>后台管理</span>}
             </div>
             <Menu

@@ -34,7 +34,7 @@ instance.interceptors.response.use(
         if (data.code === 500001) {
             message.error(data.msg)
             storage.remove('token')
-            location.href = '/login?callback' + encodeURIComponent(location.href)
+            location.href = '/#/login?callback=' + encodeURIComponent(location.href)
         } else if (data.code != 0) {
             if (response.config.showError) {
                 message.error(data.msg)
@@ -79,7 +79,7 @@ export default {
             const link = document.createElement('a')
             link.download = decodeURIComponent(fileName)
             // link.href = URL.createObjectURL(blob)
-            link.href = '/订单列表.xlsx'
+            link.href = '../assets/订单列表.xlsx'
             document.body.appendChild(link)
             link.click()
             document.body.removeChild(link)

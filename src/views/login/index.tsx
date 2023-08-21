@@ -26,9 +26,11 @@ export default function () {
             storage.set('token', data)
             setToken(data)
             message.success('登录成功')
-            const params = new URLSearchParams(location.search)
+            const searchParam = location.hash.split('?')[1]
+            const params = new URLSearchParams(searchParam)
+
             setTimeout(() => {
-                location.href = params.get('callback') || '/welcome'
+                location.href = params.get('callback') || '/#/welcome'
             })
         } catch (error) {
             setLoading(false)

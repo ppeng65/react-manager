@@ -1,5 +1,5 @@
 import React from 'react'
-import { createBrowserRouter, Navigate } from 'react-router-dom'
+import { createHashRouter, Navigate } from 'react-router-dom'
 import Login from '@/views/login'
 import Layout from '@/layout'
 import Error404 from '@/views/404'
@@ -81,4 +81,4 @@ const router = [
 // export default function () {
 //   return useRoutes(router)
 // }
-export default createBrowserRouter(router)
+export default createHashRouter(router)

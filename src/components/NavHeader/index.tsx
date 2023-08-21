@@ -47,7 +47,7 @@ const NavHeader = () => {
     const onClick: MenuProps['onClick'] = ({ key }) => {
         if (key === 'logout') {
             storage.remove('token')
-            location.href = '/login?callback' + encodeURIComponent(location.href)
+            location.href = '/#/login?callback=' + encodeURIComponent(location.href)
         }
     }
 
